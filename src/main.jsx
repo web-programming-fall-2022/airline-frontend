@@ -13,8 +13,11 @@ import TicketListPage from "./pages/ticket_list_page";
 import LoginPage from "./pages/login_page";
 import CheckoutPage from "./pages/checkout_page";
 import { RecoilRoot } from "recoil";
+import RegisterPage from "./pages/register_page";
+import axios from "axios";
 
 const queryClient = new QueryClient();
+axios.defaults.baseURL = "http://localhost:9500";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
   },
   {
     path: "/checkout",

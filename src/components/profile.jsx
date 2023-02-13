@@ -12,7 +12,7 @@ function Profile({ id, name, description, email, image }) {
         src={image}
         alt={name}
       />
-      <div className="mr-2">
+      <div className="mr-2 text-center py-1">
         <h3 className="text-sm font-bold">{name}</h3>
         <h4 className="text-xs text-center md:text-start">{description}</h4>
       </div>

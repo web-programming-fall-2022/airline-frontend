@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import BlogPostCard from "../components/blog_post_card";
 
 function HomePage() {
-  const { isLoading, isError, data } = useQuery("blogPosts", () => {
+  const { isLoading, isError, data,  } = useQuery("blogPosts", () => {
     return fetch("https://jsonplaceholder.ir/posts").then((res) => res.json());
   });
   return (
