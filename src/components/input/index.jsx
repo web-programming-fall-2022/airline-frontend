@@ -1,10 +1,10 @@
-import React from "react";
-import BaseInput from "./base_input";
-import DateInput from "./date_input";
-import SelectInput from "./select_input";
+import React from 'react';
+import BaseInput from './base_input';
+import DateInput from './date_input';
+import SelectInput from './select_input';
 
 const baseInputClassName =
-  "bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 h-10";
+  'bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 h-10';
 
 function Input({
   label,
@@ -17,7 +17,7 @@ function Input({
 }) {
   return (
     <div className="flex flex-col">
-      <label className="text-sm text-gray-400 my-2">{label}</label>
+      <label className="my-2 text-sm text-gray-400">{label}</label>
       {getInputBasedOnType(
         type,
         placeholder,
@@ -38,7 +38,7 @@ function getInputBasedOnType(
   value,
   setValue
 ) {
-  if (type === "select") {
+  if (type === 'select') {
     return (
       <SelectInput
         required={required}
@@ -49,7 +49,7 @@ function getInputBasedOnType(
       />
     );
   }
-  if (type === "date") {
+  if (type === 'date') {
     return (
       <DateInput
         required={required}

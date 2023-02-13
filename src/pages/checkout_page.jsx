@@ -1,16 +1,16 @@
-import React from "react";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Input from "../components/input";
-import PrimaryButton from "../components/primary_button";
+import React from 'react';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Input from '../components/input';
+import PrimaryButton from '../components/primary_button';
 
 function CheckoutPage() {
   return (
-    <div className="flex flex-col items-center min-h-screen justify-center m-5">
-      <section className="border rounded-lg p-5 w-full max-w-4xl">
-        <div className="w-full flex flex-col md:flex-row items-center text-center md:text-start mt-10 gap-5">
+    <div className="m-5 flex min-h-screen flex-col items-center justify-center">
+      <section className="w-full max-w-4xl rounded-lg border p-5">
+        <div className="mt-10 flex w-full flex-col items-center gap-5 text-center md:flex-row md:text-start">
           <FontAwesomeIcon
-            className="bg-purple-600 rounded-full w-20 h-20 p-6 fa-2x text-white"
+            className="fa-2x h-20 w-20 rounded-full bg-purple-600 p-6 text-white"
             icon={faCartShopping}
           />
 
@@ -23,12 +23,12 @@ function CheckoutPage() {
             <p className="text-sm font-light">قیمت: ۴۰۰۰۰ هزار تومان</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:items-center gap-0 md:gap-4 my-5">
-          <Input label={"نام"} />
-          <Input label={"نام خانوادگی"} />
-          <Input label={"شماره پاسپورت"} />
+        <div className="my-5 flex flex-col gap-0 md:flex-row md:items-center md:gap-4">
+          <Input label={'نام'} />
+          <Input label={'نام خانوادگی'} />
+          <Input label={'شماره پاسپورت'} />
         </div>
-        <PrimaryButton title={"پرداخت"}></PrimaryButton>
+        <PrimaryButton title={'پرداخت'}></PrimaryButton>
       </section>
     </div>
   );

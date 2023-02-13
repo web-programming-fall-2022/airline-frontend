@@ -1,6 +1,6 @@
-import DatePicker from "@amir04lm26/react-modern-calendar-date-picker";
-import React from "react";
-import "@amir04lm26/react-modern-calendar-date-picker/lib/DatePicker.css";
+import DatePicker from '@amir04lm26/react-modern-calendar-date-picker';
+import React from 'react';
+import '@amir04lm26/react-modern-calendar-date-picker/lib/DatePicker.css';
 
 function DateInput({ selectedDayRange, setSelectedDayRange, inputClassName }) {
   return (
