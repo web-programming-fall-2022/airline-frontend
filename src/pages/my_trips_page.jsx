@@ -1,19 +1,19 @@
-import React from "react";
-import TicketCart from "../components/ticket_card";
+import React from 'react';
+import TicketCart from '../components/ticket_card';
 
 function MyTripsPage() {
   return (
     <section className="mx-10 my-10 min-h-screen">
-      <h3 className="text-2xl font-black mb-10">سفرهای من</h3>
+      <h3 className="mb-10 text-2xl font-black">سفرهای من</h3>
       <TicketCart
-        origin={"تهران"}
-        destination={"میانه"}
+        origin={'تهران'}
+        destination={'میانه'}
         isLimited={true}
         startDate={Date.now()}
         endDate={Date.now()}
         trailing={
-          <div className="flex flex-col md:flex-row gap-2 w-full h-full">
-            <div className="flex flex-col items-start gap-5 p-5 bg-white border rounded-lg w-full h-full">
+          <div className="flex h-full w-full flex-col gap-2 md:flex-row">
+            <div className="flex h-full w-full flex-col items-start gap-5 rounded-lg border bg-white p-5">
               <p>قیمت خرید</p>
               <p>3850000 ریال</p>
             </div>

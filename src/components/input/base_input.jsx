@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function BaseInput({
   placeholder,
@@ -11,13 +11,12 @@ function BaseInput({
   return (
     <div className="flex flex-col">
       <input
-        onChange={(e) => setValue(e.target.value)}
+        onChange={e => setValue(e.target.value)}
         value={value}
         type={type}
         placeholder={placeholder}
         required={required}
-        className={inputClassName}
-      ></input>
+        className={inputClassName}></input>
     </div>
   );
 }

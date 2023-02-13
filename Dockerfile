@@ -1,9 +1,11 @@
 FROM node:16-alpine as builder
 WORKDIR /app
 COPY package.json .
-RUN npm i
+COPY pnpm-lock.yaml .
+RUN npm install -g pnpm
+RUN pnpm i
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 
 FROM nginx:1.21.0-alpine as production
